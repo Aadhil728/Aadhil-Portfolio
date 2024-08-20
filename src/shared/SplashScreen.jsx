@@ -7,7 +7,7 @@ const SplashScreen = () => {
     useEffect(() => {
         const timer = setTimeout(() => {
             setStartAnimation(true);
-        }, 1000);
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -19,8 +19,8 @@ const SplashScreen = () => {
             transition={{ duration: 1, ease: 'easeInOut' }}
             className="fixed top-0 left-0 w-full h-full bg-gray-900 flex items-center justify-center z-50 overflow-hidden"
         >
-            <motion.h2 className='text-[150px] font-dancingFont text-white' initial={{ y: 100, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }} transition={{ duration: .8 }}>A.</motion.h2>
+            <motion.h2 className='text-[100px] lg:text-[150px] font-dancingFont text-white' initial={{ y: 150, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }} >A.</motion.h2>
         </motion.div>
     );
 };
