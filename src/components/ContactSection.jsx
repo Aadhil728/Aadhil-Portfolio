@@ -125,16 +125,16 @@ const ContactSection = () => {
                     </motion.div>
 
 
-                    <motion.div className='right' variants={animationVarientFromRight} initial='initial' whileInView='animate' viewport={{
+                    <motion.div className='right w-full' variants={animationVarientFromRight} initial='initial' whileInView='animate' viewport={{
                         once: true,
                     }}>
-                        <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-3'>
+                        <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-3 text-black'>
                             <div>
                                 <input
                                     type="text"
                                     name="user_name"
                                     placeholder='Full Name'
-                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-sm bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_name && 'border-red-500'}`}
+                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-sm dark:text-black bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_name && 'border-red-500'}`}
                                 />
                                 {formErrors.user_name && <span className="text-red-500 text-xs">{formErrors.user_name}</span>}
                             </div>
