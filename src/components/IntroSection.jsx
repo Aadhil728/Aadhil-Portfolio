@@ -14,7 +14,7 @@ const IntroSection = () => {
         <section id="home" ref={ref} className="intro-section h-screen flex justify-center items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 items-center">
                 <motion.div className="left" initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }} transition={{ duration: 2 }}>
+                    animate={{ x: 0, opacity: 1 }} transition={{ duration: 3 }}>
                     <div className="text">
                         <h4 className='text-xl tracking-wide font-semibold'>Hi There, I'm 👋</h4>
                         <h2 className='text-primary font-bold text-3xl lg:text-4xl xl:text-5xl leading-[60px] xl:leading-[80px]'>MOHAMED AADHIL</h2>
@@ -37,7 +37,7 @@ const IntroSection = () => {
                     </div>
                 </motion.div>
                 <motion.div className="right flex justify-center items-center" initial={{ x: 100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }} transition={{ duration: 2 }}>
+                    animate={{ x: 0, opacity: 1 }} transition={{ duration: 3 }}>
                     <img className='w-[400px] h-[400px] xl:w-[600px] xl:h-[600px] object-cover' src="/images/profile.png" alt="" />
                 </motion.div>
             </div>
