@@ -1,38 +1,47 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    /* font-family: "Montserrat", sans-serif; */
+    font-family: "Open Sans", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Background of the track */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #00C6FF, #0072FF);
+    /* Gradient blue */
+    border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #0072FF, #00C6FF);
+    /* Inverted gradient on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: linear-gradient(180deg, #00C6FF, #0072FF) #f1f1f1;
+}
+
+/* Scrollbar styling for all elements */
+body,
+div,
+textarea {
+    scrollbar-width: thin;
+    scrollbar-color: linear-gradient(180deg, #00C6FF, #0072FF) #f1f1f1;
 }
