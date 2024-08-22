@@ -29,6 +29,9 @@ const ContactSection = () => {
         } else if (!/\S+@\S+\.\S+/.test(formElements.user_email.value)) {
             errors.user_email = 'Email is invalid';
         }
+        if (!formElements.user_subject.value.trim()) {
+            errors.user_subject = 'Subject is required';
+        }
         if (!formElements.message.value.trim()) {
             errors.message = 'Message is required';
         }
@@ -111,7 +114,7 @@ const ContactSection = () => {
                                     type="text"
                                     name="user_name"
                                     placeholder='Full Name'
-                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-sm dark:text-black bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_name && 'border-red-500'}`}
+                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-[12px] xl:text-sm dark:text-black bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_name && 'border-red-500'}`}
                                 />
                                 {formErrors.user_name && <span className="text-red-500 text-xs">{formErrors.user_name}</span>}
                             </div>
@@ -120,21 +123,30 @@ const ContactSection = () => {
                                     type="email"
                                     name="user_email"
                                     placeholder='Email'
-                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-sm bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_email && 'border-red-500'}`}
+                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-[12px] xl:text-sm bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_email && 'border-red-500'}`}
                                 />
                                 {formErrors.user_email && <span className="text-red-500 text-xs">{formErrors.user_email}</span>}
+                            </div>
+                            <div>
+                                <input
+                                    type="text"
+                                    name="user_subject"
+                                    placeholder='Subject (e.g, Project Inquiry, Job Opportunity, Collaboration )'
+                                    className={`w-full h-[40px] rounded-lg py-2 px-4 text-[12px] xl:text-sm dark:text-black bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.user_subject && 'border-red-500'}`}
+                                />
+                                {formErrors.user_subject && <span className="text-red-500 text-xs">{formErrors.user_subject}</span>}
                             </div>
                             <div>
                                 <textarea
                                     name="message"
                                     placeholder='Message'
-                                    className={`w-full h-[250px] rounded-lg py-2 px-4 text-sm bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.message && 'border-red-500'}`}
+                                    className={`w-full h-[200px] rounded-lg py-2 px-4 text-[12px] xl:text-sm bg-white shadow-sm border border-black/10 tracking-wider ${formErrors.message && 'border-red-500'}`}
                                 />
                                 {formErrors.message && <span className="text-red-500 text-xs">{formErrors.message}</span>}
                             </div>
                             <button
                                 type="submit"
-                                className={`w-full h-[40px] bg-primary rounded-lg text-white text-sm tracking-wider cursor-pointer flex justify-center items-center gap-2 ${isSending ? 'bg-primary/80' : 'hover:bg-primary/80 hover:text-black'} group`}
+                                className={`w-full h-[40px] bg-primary rounded-lg text-white text-[12px] xl:text-sm tracking-wider cursor-pointer flex justify-center items-center gap-2 ${isSending ? 'bg-primary/80' : 'hover:bg-primary/80 hover:text-black'} group`}
                                 disabled={isSending}
                             >
                                 {isSending ? (
