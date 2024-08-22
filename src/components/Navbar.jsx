@@ -31,7 +31,7 @@ const Navbar = () => {
     <>
       <button
         onClick={toggleDarkMode}
-        className='theme-toggle-button fixed bottom-[50px] right-[50px] border border-black/30 dark:border-gray-300 p-3 rounded-full'
+        className='theme-toggle-button fixed bottom-[30px] right-[30px] lg:bottom-[50px] lg:right-[50px] border border-black/30 dark:border-gray-300 p-3 rounded-full'
       >
         {darkMode ? <FaSun size={18} /> : <FaMoon size={15} />}
       </button>

@@ -4,50 +4,45 @@ import { educationData, experiencesData } from '../lib/data';
 import { useSectionInView } from '../lib/hooks';
 import { motion } from 'framer-motion'
 
-const animationVarientFromLeft = {
-    initial: { opacity: 0, x: -100 },
-    animate: (index) => ({
-        opacity: 1,
-        x: 0,
-        transition: {
-            delay: 0.5 * index,
-            duration: 1,
-            ease: "easeInOut",
-        },
-    })
-}
-
-const animationVarientFromRight = {
-    initial: { x: 100, opacity: 0 },
-    animate: (index) => ({
-        x: 0,
-        opacity: 1,
-        transition: {
-            delay: 0.5 * index,
-            duration: .5,
-        },
-    })
-}
-
 const ExperienceSection = () => {
+
+    const animationVarientFromLeft = {
+        initial: { opacity: 0, x: -100 },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+            },
+        }
+    }
+
+    const animationVarientFromRight = {
+        initial: { opacity: 0, x: 100 },
+        animate: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                duration: 0.5,
+            },
+        }
+    }
 
     const ref = useSectionInView('Experience', 0.5);
 
     return (
-        <section id='experience' ref={ref}>
+        <section id='experience' ref={ref} className='w-full '>
             <SectionHeading text='Experience & Eductaion' />
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
                 <div>
                     {experiencesData.map((item, index) => (
                         <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'
-                            variants={animationVarientFromLeft} initial='initial' whileInView='animate' viewport={{
-                                once: true,
-                            }} custom={index}>
+                            variants={animationVarientFromLeft} initial='initial' whileInView="animate">
                             <div className='lg:flex gap-2 justify-between'>
                                 <div className='flex gap-4 items-center'>
                                     <div className='border border-black/5 p-1 rounded-full bg-primary/10'>
-                                        <img className='w-[40px] h-[40px] object-cover' src={item.image} alt={item.image} />
+                                        <img className='w-[35px] h-[35px] object-contain' src={item.image} alt={item.image} />
                                     </div>
                                     <div>
                                         <h3 className="font-semibold capitalize">{item.title}</h3>
@@ -61,7 +56,7 @@ const ExperienceSection = () => {
                                     <p className='!mt-0 !text-[12px]'>{item.type}</p>
                                 </div>
                             </div>
-                            <ul>
+                            <ul className='ml-5'>
                                 <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description}</li>
                                 <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description2}</li>
                                 <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description3}</li>
@@ -72,11 +67,10 @@ const ExperienceSection = () => {
 
                 <div>
                     {educationData.map((item, index) => (
-                        <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md' variants={animationVarientFromRight} initial='initial' whileInView='animate' viewport={{
-                            once: true,
-                        }} custom={index}>
+                        <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'
+                        variants={animationVarientFromRight} initial='initial' whileInView="animate">
                             <div className='flex gap-2 justify-between'>
-                                <div className='flex gap-4 items-center'>
+                                <div div className='flex gap-4 items-center' >
                                     <div className='border border-black/5 p-2 rounded-full bg-primary/10'>
                                         <span className='text-xl'>{item.image}</span>
                                     </div>
@@ -91,11 +85,12 @@ const ExperienceSection = () => {
                                 </div>
                             </div>
                         </motion.div>
-                    ))}
-                </div>
-            </div>
+                    ))
+                    }
+                </div >
+            </div >
 
-        </section>
+        </section >
     )
 }
 
