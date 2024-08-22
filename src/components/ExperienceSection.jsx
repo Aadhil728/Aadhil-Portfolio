@@ -18,14 +18,13 @@ const animationVarientFromLeft = {
 }
 
 const animationVarientFromRight = {
-    initial: { opacity: 0, x: 100 },
+    initial: { x: 100, opacity: 0 },
     animate: (index) => ({
-        opacity: 1,
         x: 0,
+        opacity: 1,
         transition: {
             delay: 0.5 * index,
-            duration: 1,
-            ease: "easeInOut",
+            duration: .5,
         },
     })
 }

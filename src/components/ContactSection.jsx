@@ -79,10 +79,10 @@ const ContactSection = () => {
         })
     }
     const animationVarientFromRight = {
-        initial: { opacity: 0, x: 100 },
+        initial: { y: 100, opacity: 0 },
         animate: () => ({
+            y: 0,
             opacity: 1,
-            x: 0,
             transition: {
                 duration: 1,
                 ease: "easeInOut",
@@ -125,7 +125,7 @@ const ContactSection = () => {
                     </motion.div>
 
 
-                    <motion.div className='right w-full' variants={animationVarientFromRight} initial='initial' whileInView='animate' viewport={{
+                    <motion.div variants={animationVarientFromRight} initial='initial' whileInView='animate' viewport={{
                         once: true,
                     }}>
                         <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-3 text-black'>
