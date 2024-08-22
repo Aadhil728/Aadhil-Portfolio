@@ -13,10 +13,10 @@ const IntroSection = () => {
     return (
         <section id="home" ref={ref} className="intro-section h-screen flex justify-center items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 items-center">
-                <motion.div className="left" initial={{ x: -100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }} transition={{ duration: 3 }}>
+                <motion.div className="left" initial={{ opacity: 0, x: -100 }}
+                    animate={{ opacity: 1, x: 0 }} transition={{ delay: 2, duration: 1 }}>
                     <div className="text">
-                        <h4 className='text-xl tracking-wide font-semibold'>Hi There, I'm 👋</h4>
+                        <h4 className='text-xl tracking-wide font-semibold'>i There, I'm 👋</h4>
                         <h2 className='text-primary font-bold text-3xl lg:text-4xl xl:text-5xl leading-[60px] xl:leading-[80px]'>MOHAMED AADHIL</h2>
                         <h6 className='text-md xl:text-xl tracking-widest font-semibold'>SOFTWARE ENGINEER</h6>
                         <p className='text-sm xl:text-md mt-3 tracking-wide flex flex-wrap max-w-[25rem]'>A self-driven individual, aspiring to explore new horizons in the field of IT with an appetite for Full Stack Engineering.</p>
@@ -36,8 +36,8 @@ const IntroSection = () => {
                         </Link>
                     </div>
                 </motion.div>
-                <motion.div className="right flex justify-center items-center" initial={{ x: 100, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }} transition={{ duration: 3 }}>
+                <motion.div className="right flex justify-center items-center" initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }} transition={{ delay: 2, duration: 1 }}>
                     <img className='w-[400px] h-[400px] xl:w-[600px] xl:h-[600px] object-cover' src="/images/profile.png" alt="" />
                 </motion.div>
             </div>

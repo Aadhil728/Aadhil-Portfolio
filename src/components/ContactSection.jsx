@@ -67,36 +67,13 @@ const ContactSection = () => {
             );
     };
 
-    const animationVarientFromLeft = {
-        initial: { opacity: 0, x: -100 },
-        animate: () => ({
-            opacity: 1,
-            x: 0,
-            transition: {
-                duration: 1,
-                ease: "easeInOut",
-            },
-        })
-    }
-    const animationVarientFromRight = {
-        initial: { x: 100, opacity: 0 },
-        animate: () => ({
-            x: 0,
-            opacity: 1,
-            transition: {
-                duration: 1,
-                ease: "easeInOut",
-            },
-        })
-    }
-
     return (
         <section id='contact' ref={ref} className="mb-20">
             <div className="container">
                 <SectionHeading text='Contact Me' />
                 <div className='grid grid-cols-1 lg:grid-cols-2'>
                     <motion.div className='left flex flex-col justify-start items-center lg:items-start'
-                        variants={animationVarientFromLeft} initial='initial' whileInView='animate' viewport={{
+                        initial={{ opacity: 0, x: -100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{
                             once: true,
                         }}>
                         <h2 className='text-3xl lg:text-5xl font-light'>Get In Touch 👋</h2>
@@ -125,7 +102,7 @@ const ContactSection = () => {
                     </motion.div>
 
 
-                    <motion.div variants={animationVarientFromRight} initial='initial' whileInView='animate' viewport={{
+                    <motion.div initial={{ opacity: 0, x: 100 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 1 }} viewport={{
                         once: true,
                     }}>
                         <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-3 text-black'>

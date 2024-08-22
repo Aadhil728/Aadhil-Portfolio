@@ -2,19 +2,46 @@ import React from 'react'
 import SectionHeading from '../shared/SectionHeading'
 import { educationData, experiencesData } from '../lib/data';
 import { useSectionInView } from '../lib/hooks';
+import { motion } from 'framer-motion'
 
 const ExperienceSection = () => {
 
     const ref = useSectionInView('Experience', 0.5);
 
+    const animationVarientsFromLeft = {
+        initial: { opacity: 0, x: -100 },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1,
+                ease: "easeInOut",
+            },
+        }
+    }
+    const animationVarientsFromRight = {
+        initial: { opacity: 0, x: 100 },
+        animate: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 1,
+                ease: "easeInOut",
+            },
+        }
+    }
+
     return (
-        <section id='experience' ref={ref}>
+        <section id='experience' ref={ref} className='overflow-hidden'>
             <SectionHeading text='Experience & Eductaion' />
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
                 <div>
                     {experiencesData.map((item, index) => (
-                        <div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'>
+                        <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'
+                            variants={animationVarientsFromLeft} initial='initial' whileInView='animate' viewport={{
+                                once: true,
+                            }}>
                             <div className='lg:flex gap-2 justify-between'>
                                 <div className='flex gap-4 items-center'>
                                     <div className='border border-black/5 p-1 rounded-full bg-primary/10'>
@@ -37,13 +64,16 @@ const ExperienceSection = () => {
                                 <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description2}</li>
                                 <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description3}</li>
                             </ul>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
                 <div>
                     {educationData.map((item, index) => (
-                        <div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'>
+                        <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'
+                            variants={animationVarientsFromRight} initial='initial' whileInView='animate' viewport={{
+                                once: true,
+                            }}>
                             <div className='flex gap-2 justify-between'>
                                 <div className='flex gap-4 items-center'>
                                     <div className='border border-black/5 p-2 rounded-full bg-primary/10'>
@@ -59,7 +89,7 @@ const ExperienceSection = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

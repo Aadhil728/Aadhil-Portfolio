@@ -11,6 +11,7 @@ const animationVarients = {
         y: 0,
         transition: {
             delay: 0.08 * index,
+            duration: 1
         },
     })
 }
