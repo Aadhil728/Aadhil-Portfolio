@@ -16,7 +16,7 @@ const IntroSection = () => {
                 <motion.div className="left" initial={{ opacity: 0, x: -100 }}
                     animate={{ opacity: 1, x: 0 }} transition={{ delay: 2, duration: 1 }}>
                     <div className="text">
-                        <h4 className='text-xl tracking-wide font-semibold'>i There, I'm 👋</h4>
+                        <h4 className='text-xl tracking-wide font-semibold'>Hi There, I'm 👋</h4>
                         <h2 className='text-primary font-bold text-3xl lg:text-4xl xl:text-5xl leading-[60px] xl:leading-[80px]'>MOHAMED AADHIL</h2>
                         <h6 className='text-md xl:text-xl tracking-widest font-semibold'>SOFTWARE ENGINEER</h6>
                         <p className='text-sm xl:text-md mt-3 tracking-wide flex flex-wrap max-w-[25rem]'>A self-driven individual, aspiring to explore new horizons in the field of IT with an appetite for Full Stack Engineering.</p>
