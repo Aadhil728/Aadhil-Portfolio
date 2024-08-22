@@ -184,3 +184,24 @@ export const educationData = [
     location: "Nehombo | Sri lanka",
   },
 ];
+
+export const servicesData = [
+  {
+    image: "/images/services/web.png",
+    title: "Web Development",
+    description:
+      "Developing high-quality websites with HTML, CSS, and JavaScript.",
+  },
+  {
+    image: "/images/services/fullstack.png",
+    title: "E-Commerce development",
+    description:
+      "Developing high-quality websites with HTML, CSS, and JavaScript.",
+  },
+  {
+    image: "/images/services/mobile.png",
+    title: "Mobile Development",
+    description:
+      "Developing high-quality websites with HTML, CSS, and JavaScript.",
+  },
+]
