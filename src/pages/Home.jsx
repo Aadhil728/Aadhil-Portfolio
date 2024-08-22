@@ -4,7 +4,7 @@ import IntroSection from '../components/IntroSection'
 import SectionDevider from '../shared/SectionDevider'
 import AboutSection from '../components/AboutSection'
 import SkillsSection from '../components/SkillsSection'
-import ExperienceSection from '../components/ExperienceSection'
+// import ExperienceSection from '../components/ExperienceSection'
 import ContactSection from '../components/ContactSection'
 import Footer from '../components/Footer'
 
@@ -18,8 +18,8 @@ const Home = () => {
                 <IntroSection />
                 <SectionDevider />
                 <AboutSection />
-                <SectionDevider />
-                <ExperienceSection />
+                {/* <SectionDevider />
+                <ExperienceSection /> */}
                 <SectionDevider />
                 <SkillsSection />
                 <SectionDevider />
