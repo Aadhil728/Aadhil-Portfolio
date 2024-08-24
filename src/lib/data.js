@@ -38,7 +38,11 @@ export const skillsData = [
         icon: "/images/icons/javascript.webp",
         color: "#fff082d9",
       },
-      { name: "React", icon: "/images/icons/react.webp", color: "#b8f0ff75" },
+      {
+        name: "React Js",
+        icon: "/images/icons/react.webp",
+        color: "#b8f0ff75",
+      },
       {
         name: "Angular",
         icon: "/images/icons/angular.png",
@@ -56,13 +60,23 @@ export const skillsData = [
         icon: "/images/icons/tailwind.webp",
         color: "#97efff7d",
       },
-      { name: "Redux", icon: "/images/icons/redux.png", color: "#783ab040" },
+      {
+        name: "Redux Toolkit",
+        icon: "/images/icons/redux.png",
+        color: "#783ab040",
+      },
+      { name: "PHP", icon: "/images/icons/redux.png", color: "#783ab040" },
+      { name: "JSON", icon: "/images/icons/redux.png", color: "#783ab040" },
+      { name: "JQuery", icon: "/images/icons/redux.png", color: "#783ab040" },
     ],
     backendSkills: [
       { name: "Node.JS", icon: "/images/icons/node.webp", color: "#BBF0BB" },
       { name: "Express", icon: "/images/icons/express.webp", color: "#BBBBBB" },
       { name: "MongoDB", icon: "/images/icons/mongodb.webp", color: "#AEEE9C" },
       { name: "MySQL", icon: "/images/icons/mysql.webp", color: "#ABDCF2" },
+      { name: "PHP", icon: "/images/icons/mysql.webp", color: "#ABDCF2" },
+      { name: "Laravel", icon: "/images/icons/mysql.webp", color: "#ABDCF2" },
+      { name: "Firebase", icon: "/images/icons/mysql.webp", color: "#ABDCF2" },
     ],
     otherSkills: [
       { name: "Git", icon: "/images/icons/git.webp", color: "#ED9A8F" },
@@ -79,28 +93,41 @@ export const skillsData = [
         color: "#9AC3D0",
       },
       {
-        name: "Firebase",
-        icon: "/images/icons/firebase.png",
-        color: "#fcb96ca3",
-      },
-      {
         name: "RESTful APIs",
         icon: "/images/icons/restapi.png",
         color: "#0c85c236",
       },
       { name: "Figma", icon: "/images/icons/figma.webp", color: "#0acf834f" },
       {
-        name: "Photoshop",
+        name: "Adobe Photoshop",
         icon: "/images/icons/photoshop.png",
         color: "#00112557",
       },
-      { name: "Illustrator", icon: "/images/icons/ai.png", color: "#f594025e" },
+      {
+        name: "Adobe Illustrator",
+        icon: "/images/icons/ai.png",
+        color: "#f594025e",
+      },
+      { name: "Canva", icon: "/images/icons/ai.png", color: "#f594025e" },
     ],
   },
 ];
 
 // experince data
 export const experiencesData = [
+  {
+    title: "Graphic Designer",
+    company: "Freelancer",
+    location: "Doha | Qatar",
+    type: "Remote",
+    description:
+      "Created visually appealing graphic design materials, such as logos, social media graphics, and marketing collateral, leading to a 40% increase in client engagement and brand visibility across digital platforms.",
+    description2:
+      "Enhanced brand identity and visual storytelling for clients through custom graphic design solutions, achieving a 30% improvement in overall client satisfaction and a 25% growth in repeat business.",
+    image: "/images/experience/apssoft.png",
+    date: "Apr 2023 - Present",
+    skillset: ["Photoshop", "Illustrator", "Canva", "Pixels"],
+  },
   {
     title: "Associate Front End Developer",
     company: "AppsSoft SD PVT LTD",
@@ -113,7 +140,7 @@ export const experiencesData = [
     description3:
       "Worked collaboratively with team members to integrate third-party services and APIs seamlessly, reducing development time by 15% and ensuring smooth application functionality",
     image: "/images/experience/apssoft.png",
-    date: "APR 2023 - APR 2024",
+    date: "Apr 2023 - Apr 2024",
     skillset: [
       "JavaScript",
       "React",
@@ -138,7 +165,7 @@ export const experiencesData = [
       "Improved user interfaces and improved user experience, leading to a 30% increase in user satisfaction scores. Assisted in the deployment and maintenance of cloud-based applications, achieving a 15% reduction in server downtime.",
     icon: <FaGraduationCap />,
     image: "/images/experience/maytech.png",
-    date: "JUNE 2020 - FEB 2023",
+    date: "June 2020 - Feb 2023",
     skillset: [
       "TypeScript",
       "Angular",
@@ -163,15 +190,8 @@ export const experiencesData = [
       "Assisted in integrating performance monitoring tools and conducting optimizations, resulting in a 20% reduction in frontend-related issues reported by users.",
     icon: <FaGraduationCap />,
     image: "/images/experience/ecom-service.png",
-    date: "JAN 2021 – AUG 2023",
-    skillset: [
-      "Html / Css",
-      "Javascript",
-      "Bootstrap",
-      "JSON",
-      "",
-
-    ],
+    date: "Jan 2021 – Aug 2023",
+    skillset: ["Html / Css", "Javascript", "Bootstrap", "JSON", ""],
   },
 ];
 
@@ -180,35 +200,35 @@ export const educationData = [
     image: <FaGraduationCap />,
     name: "BTECH Higher National Diploma In Software Engineering",
     collage: "BTEC Pearson UK",
-    date: "JAN 2021 - JUL 2023",
+    date: "Jan 2021 - Jul 2023",
     location: "Colombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "DITEC Assured Diploma In Information Technology.",
     collage: "BTEC Pearson UK",
-    date: "JAN 2019 - FEB 2020",
+    date: "Jan 2019 - Feb 2020",
     location: "Colombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "WordPress Development Course.",
     collage: "FIND X Pvt LTD",
-    date: "FEB 2023 - SEP 2023",
+    date: "Feb 2023 - Sep 2023",
     location: "Colombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "English Diploma Course.",
     collage: "Sathsahana Foundation ",
-    date: "JAN 2018 - JUL 2018",
+    date: "Jan 2018 - Jul 2018",
     location: "Negombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "Computer Diploma Course.",
     collage: "Sathsahana Foundation ",
-    date: "JAN 2018 - JUL 2018",
+    date: "Jan 2018 - Jul 2018",
     location: "Negombo | Sri Lanka",
   },
 ];
