@@ -10,6 +10,14 @@ import { useSectionInView } from '../lib/hooks';
 const IntroSection = () => {
     const ref = useSectionInView('Home', 0.5);
 
+    // Function to handle smooth scrolling
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <section id="home" ref={ref} className="intro-section h-screen flex justify-center items-center">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-10 items-center">
@@ -22,10 +30,10 @@ const IntroSection = () => {
                         <p className='text-sm xl:text-md mt-3 tracking-wide flex flex-wrap max-w-[25rem]'>A self-driven individual, aspiring to explore new horizons in the field of IT with an appetite for Full Stack Engineering.</p>
                     </div>
                     <div className='mt-8 flex items-center flex-wrap gap-3'>
-                        <Link to={'#contact'} className='bg-primary text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition text-xs xl:text-md tracking-wider shadow-md'>Contact Me
+                        <button onClick={scrollToContact} className='bg-primary text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition text-xs xl:text-md tracking-wider shadow-md'>Contact Me
                             <MdArrowRightAlt />
-                        </Link>
-                        <a href='/CV.pdf' download={true} className='bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition text-xs xl:text-md tracking-wider shadow-md border border-black/10'>Download CV
+                        </button>
+                        <a href='/Aadhil_Resume.pdf' download className='bg-white text-black px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition text-xs xl:text-md tracking-wider shadow-md border border-black/10'>Download CV
                             <IoMdDownload />
                         </a>
                         <Link to={'https://www.linkedin.com/in/mohamed-aadhil-851468222/'} className='bg-white text text-white w-[40px] h-[40px] flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition text-xs xl:text-md shadow-md border border-black/10'>

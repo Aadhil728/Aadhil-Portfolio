@@ -44,7 +44,7 @@ export const skillsData = [
         icon: "/images/icons/angular.png",
         color: "#ed9a8fa8",
       },
-      { name: "Vue.JS", icon: "/images/icons/vue.webp", color: "#0488044d" },
+      { name: "Vue Js", icon: "/images/icons/vue.webp", color: "#0488044d" },
       { name: "TypeScript", icon: "/images/icons/ts.png", color: "#63b0e96e" },
       {
         name: "Bootstrap",
@@ -62,7 +62,7 @@ export const skillsData = [
       { name: "Node.JS", icon: "/images/icons/node.webp", color: "#BBF0BB" },
       { name: "Express", icon: "/images/icons/express.webp", color: "#BBBBBB" },
       { name: "MongoDB", icon: "/images/icons/mongodb.webp", color: "#AEEE9C" },
-      { name: "MySql", icon: "/images/icons/mysql.webp", color: "#ABDCF2" },
+      { name: "MySQL", icon: "/images/icons/mysql.webp", color: "#ABDCF2" },
     ],
     otherSkills: [
       { name: "Git", icon: "/images/icons/git.webp", color: "#ED9A8F" },
@@ -79,7 +79,7 @@ export const skillsData = [
         color: "#9AC3D0",
       },
       {
-        name: "Firease",
+        name: "Firebase",
         icon: "/images/icons/firebase.png",
         color: "#fcb96ca3",
       },
@@ -113,7 +113,17 @@ export const experiencesData = [
     description3:
       "Worked collaboratively with team members to integrate third-party services and APIs seamlessly, reducing development time by 15% and ensuring smooth application functionality",
     image: "/images/experience/apssoft.png",
-    date: "07/2023 – present",
+    date: "APR 2023 - APR 2024",
+    skillset: [
+      "JavaScript",
+      "React",
+      "Vue Js",
+      "Laravel",
+      "Alpine Js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+    ],
   },
   {
     title: "Junior Software Developer",
@@ -128,7 +138,17 @@ export const experiencesData = [
       "Improved user interfaces and improved user experience, leading to a 30% increase in user satisfaction scores. Assisted in the deployment and maintenance of cloud-based applications, achieving a 15% reduction in server downtime.",
     icon: <FaGraduationCap />,
     image: "/images/experience/maytech.png",
-    date: "05/2021 – 02/2023",
+    date: "JUNE 2020 - FEB 2023",
+    skillset: [
+      "TypeScript",
+      "Angular",
+      "Bootstrap",
+      "JSON",
+      "Node Js",
+      "Express",
+      "Mongo DB",
+      "MYSQL",
+    ],
   },
   {
     title: "Front End Developer Intern",
@@ -143,7 +163,15 @@ export const experiencesData = [
       "Assisted in integrating performance monitoring tools and conducting optimizations, resulting in a 20% reduction in frontend-related issues reported by users.",
     icon: <FaGraduationCap />,
     image: "/images/experience/ecom-service.png",
-    date: "05/2021 – 02/2023",
+    date: "JAN 2021 – AUG 2023",
+    skillset: [
+      "Html / Css",
+      "Javascript",
+      "Bootstrap",
+      "JSON",
+      "",
+
+    ],
   },
 ];
 
@@ -152,36 +180,36 @@ export const educationData = [
     image: <FaGraduationCap />,
     name: "BTECH Higher National Diploma In Software Engineering",
     collage: "BTEC Pearson UK",
-    date: "Jan 2021 - Jul 2023",
-    location: "Colombo | Sri lanka",
+    date: "JAN 2021 - JUL 2023",
+    location: "Colombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "DITEC Assured Diploma In Information Technology.",
     collage: "BTEC Pearson UK",
-    date: "Jan 2019 - Feb 2020",
-    location: "Colombo | Sri lanka",
+    date: "JAN 2019 - FEB 2020",
+    location: "Colombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "WordPress Development Course.",
     collage: "FIND X Pvt LTD",
-    date: "Feb 2023 - Sep 2023",
-    location: "Colombo | Sri lanka",
+    date: "FEB 2023 - SEP 2023",
+    location: "Colombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "English Diploma Course.",
     collage: "Sathsahana Foundation ",
-    date: "Jan 2018 - Jul 2018",
-    location: "Nehombo | Sri lanka",
+    date: "JAN 2018 - JUL 2018",
+    location: "Negombo | Sri Lanka",
   },
   {
     image: <FaGraduationCap />,
     name: "Computer Diploma Course.",
     collage: "Sathsahana Foundation ",
-    date: "Jan 2018 - Jul 2018",
-    location: "Nehombo | Sri lanka",
+    date: "JAN 2018 - JUL 2018",
+    location: "Negombo | Sri Lanka",
   },
 ];
 
@@ -204,4 +232,4 @@ export const servicesData = [
     description:
       "Developing high-quality websites with HTML, CSS, and JavaScript.",
   },
-]
+];

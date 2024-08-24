@@ -37,6 +37,7 @@ const ExperienceSection = () => {
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
                 <div>
+                    <h4 className='mb-3 font-semibold tracking-wide text-sm'>Experience</h4>
                     {experiencesData.map((item, index) => (
                         <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'
                             variants={animationVarientsFromLeft} initial='initial' whileInView='animate' viewport={{
@@ -61,14 +62,22 @@ const ExperienceSection = () => {
                             </div>
                             <ul>
                                 <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description}</li>
-                                <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description2}</li>
-                                <li className='list-disc !ml-5 !lg:ml-20 !text-[12px] mt-2'>{item.description3}</li>
+                                <li className='list-disc !ml-5 !lg:ml-20 !text-[12px]'>{item.description2}</li>
                             </ul>
+
+                            <div className='flex justify-start items-center flex-wrap my-3'>
+                                {item.skillset && item.skillset.map((skill, skillIndex) => (
+                                    <p key={skillIndex} className='text-[12px] text-black dark:text-white  font-semibold tracking-wider bg-gray-50 dark:bg-gray-300/50 py-1 px-3 rounded-full m-1 shadow-sm border-black/10'>
+                                        {skill}
+                                    </p>
+                                ))}
+                            </div>
                         </motion.div>
                     ))}
                 </div>
 
                 <div>
+                    <h4 className='mb-3 font-semibold tracking-wide text-sm'>Education</h4>
                     {educationData.map((item, index) => (
                         <motion.div key={index} className='border border-black/10 p-4 rounded-lg mb-5 bg-white/10 shadow-md'
                             variants={animationVarientsFromRight} initial='initial' whileInView='animate' viewport={{

@@ -81,14 +81,14 @@ const ContactSection = () => {
                         }}>
                         <h2 className='text-3xl lg:text-5xl font-light'>Get In Touch 👋</h2>
                         <p className='text-sm mt-10'>or feel free to contact me at:</p>
-                        <Link className='flex items-center gap-2 text-md mt-2 text-gray-950 dark:text-gray-50 hover:text-primary transition'>
+                        <a href="mailto:aadhil.mohd24@gmail.com" className='flex items-center gap-2 text-md mt-2 text-gray-950 dark:text-gray-50 hover:text-primary transition'>
                             <MdEmail size={20} />
                             <span>aadhil.mohd24@gmail.com</span>
-                        </Link>
-                        <Link className='flex items-center gap-2 text-md mt-2 text-gray-950 dark:text-gray-50 hover:text-primary transition'>
+                        </a>
+                        <a href="https://wa.me/97433009179" className='flex items-center gap-2 text-md mt-2 text-gray-950 dark:text-gray-50 hover:text-primary transition'>
                             <FaWhatsapp size={20} />
                             <span>+974 33009179</span>
-                        </Link>
+                        </a>
 
                         <p className='text-sm mt-10'>Socials:</p>
                         <div className="mb-5 lg:mb-0 mt-5 flex items-center justify-start gap-2">
