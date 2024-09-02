@@ -31,8 +31,8 @@ export const links = [
 export const skillsData = [
   {
     frontendSkills: [
-      { name: "HTML5", icon: "/images/icons/html.webp", color: "#f9a58e6e" },
-      { name: "CSS3", icon: "/images/icons/css.webp", color: "#63b0e96e" },
+      { name: "HTML5", icon: "/images/icons/html.png", color: "#f9a58e6e" },
+      { name: "CSS3", icon: "/images/icons/css.png", color: "#63b0e96e" },
       {
         name: "JavaScript",
         icon: "/images/icons/javascript.webp",
@@ -86,7 +86,7 @@ export const skillsData = [
       { name: "NPM", icon: "/images/icons/npm.webp", color: "#FFBDBD" },
       { name: "VS Code", icon: "/images/icons/vscode.webp", color: "#61BFFF" },
       { name: "Postman", icon: "/images/icons/postman.webp", color: "#F7931E" },
-      { name: "AWS Cloud", icon: "/images/icons/aws.webp", color: "#fcb96c" },
+      { name: "AWS Cloud", icon: "/images/icons/aws.png", color: "#fcb96c" },
       {
         name: "WordPress",
         icon: "/images/icons/wordpress.webp",
@@ -124,7 +124,7 @@ export const experiencesData = [
       "Created visually appealing graphic design materials, such as logos, social media graphics, and marketing collateral, leading to a 40% increase in client engagement and brand visibility across digital platforms.",
     description2:
       "Enhanced brand identity and visual storytelling for clients through custom graphic design solutions, achieving a 30% improvement in overall client satisfaction and a 25% growth in repeat business.",
-    image: "/images/experience/freelance.jpeg",
+    image: "/images/experience/freelance.png",
     date: "Apr 2023 - Present",
     skillset: ["Photoshop", "Illustrator", "Canva", "Pixels"],
   },
@@ -164,7 +164,7 @@ export const experiencesData = [
     description3:
       "Improved user interfaces and improved user experience, leading to a 30% increase in user satisfaction scores. Assisted in the deployment and maintenance of cloud-based applications, achieving a 15% reduction in server downtime.",
     icon: <FaGraduationCap />,
-    image: "/images/experience/maytec.jpeg",
+    image: "/images/experience/maytech.png",
     date: "June 2020 - Feb 2023",
     skillset: [
       "TypeScript",
@@ -189,7 +189,7 @@ export const experiencesData = [
     description3:
       "Assisted in integrating performance monitoring tools and conducting optimizations, resulting in a 20% reduction in frontend-related issues reported by users.",
     icon: <FaGraduationCap />,
-    image: "/images/experience/ecom.jpeg",
+    image: "/images/experience/ecom-service.png",
     date: "Jan 2021 – Aug 2023",
     skillset: ["Html / Css", "Javascript", "Bootstrap", "JSON", "Shopify"],
   },
