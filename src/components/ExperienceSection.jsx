@@ -45,8 +45,8 @@ const ExperienceSection = () => {
                             }}>
                             <div className='lg:flex gap-2 justify-between'>
                                 <div className='flex gap-4 items-center'>
-                                    <div className='border border-black/5 p-1 rounded-full bg-primary/10'>
-                                        <img className='w-[40px] h-[40px] object-cover' src={item.image} alt={item.image} />
+                                    <div className='border border-black/5 p-1 rounded-full bg-primary/10 overflow-hidden'>
+                                        <img className='w-[40px] h-[40px] object-cover rounded-full' src={item.image} alt={item.image} />
                                     </div>
                                     <div>
                                         <h3 className="font-semibold capitalize">{item.title}</h3>

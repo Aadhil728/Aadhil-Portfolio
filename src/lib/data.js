@@ -124,7 +124,7 @@ export const experiencesData = [
       "Created visually appealing graphic design materials, such as logos, social media graphics, and marketing collateral, leading to a 40% increase in client engagement and brand visibility across digital platforms.",
     description2:
       "Enhanced brand identity and visual storytelling for clients through custom graphic design solutions, achieving a 30% improvement in overall client satisfaction and a 25% growth in repeat business.",
-    image: "/images/experience/apssoft.png",
+    image: "/images/experience/freelance.jpeg",
     date: "Apr 2023 - Present",
     skillset: ["Photoshop", "Illustrator", "Canva", "Pixels"],
   },
@@ -164,7 +164,7 @@ export const experiencesData = [
     description3:
       "Improved user interfaces and improved user experience, leading to a 30% increase in user satisfaction scores. Assisted in the deployment and maintenance of cloud-based applications, achieving a 15% reduction in server downtime.",
     icon: <FaGraduationCap />,
-    image: "/images/experience/maytech.png",
+    image: "/images/experience/maytec.jpeg",
     date: "June 2020 - Feb 2023",
     skillset: [
       "TypeScript",
@@ -189,9 +189,9 @@ export const experiencesData = [
     description3:
       "Assisted in integrating performance monitoring tools and conducting optimizations, resulting in a 20% reduction in frontend-related issues reported by users.",
     icon: <FaGraduationCap />,
-    image: "/images/experience/ecom-service.png",
+    image: "/images/experience/ecom.jpeg",
     date: "Jan 2021 – Aug 2023",
-    skillset: ["Html / Css", "Javascript", "Bootstrap", "JSON", ""],
+    skillset: ["Html / Css", "Javascript", "Bootstrap", "JSON", "Shopify"],
   },
 ];
 
@@ -235,21 +235,21 @@ export const educationData = [
 
 export const servicesData = [
   {
-    image: "/images/services/web.png",
+    image: "/images/services/web_dev.png",
     title: "Web Development",
     description:
-      "Developing high-quality websites with HTML, CSS, and JavaScript.",
+      "Building and maintaining websites with a focus on functionality, performance, and user experience using technologies like HTML, CSS, JavaScript, and various frameworks.",
   },
   {
-    image: "/images/services/fullstack.png",
+    image: "/images/services/e-commerce.png",
     title: "E-Commerce development",
     description:
-      "Developing high-quality websites with HTML, CSS, and JavaScript.",
+      "Creating online platforms for businesses to sell products and services, incorporating features like product listings, shopping carts, payment gateways, and order management.",
   },
   {
-    image: "/images/services/mobile.png",
+    image: "/images/services/mobile_dev.png",
     title: "Mobile Development",
     description:
-      "Developing high-quality websites with HTML, CSS, and JavaScript.",
+      "Developing applications for mobile devices using native (Swift for iOS, Kotlin for Android) or cross-platform technologies (React Native, Flutter) to deliver a seamless user experience.",
   },
 ];
